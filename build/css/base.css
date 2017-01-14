@@ -19,12 +19,18 @@ Screen Sizes
       flex-basis: 40%;
   text-transform: capitalize;
   color: white;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media (min-width: 600px) {
+    .intro-section {
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
 
 .my-photo {
-  width: 30%;
-  height: 100%;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   background-image: url("../../assets/images/profilepic.jpg");
   background-repeat: no-repeat; }
@@ -37,19 +43,28 @@ Screen Sizes
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
+  -ms-flex-pack: center;
+      justify-content: center; }
+  @media (min-width: 600px) {
+    .projects {
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
 
 h1 {
   text-align: center;
   -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
+      flex-basis: 100%;
+  text-transform: uppercase; }
 
 .project {
-  width: 250px;
-  height: 250px;
+  width: 320px;
+  height: 300px;
   background-color: white;
   margin: 2%; }
+  @media (min-width: 1240px) {
+    .project {
+      width: 260px;
+      height: 260px; } }
 
 #project1 {
   background-image: url("../../assets/images/aloha.png");

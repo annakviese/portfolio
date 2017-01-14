@@ -4,17 +4,25 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    @include tablet {
+        justify-content: space-between;
+    }
 }
 h1 {
     text-align: center;
     flex-basis: 100%;
+    text-transform: uppercase;
 }
 .project {
-    width: 250px;
-    height: 250px;
+    width: 320px;
+    height: 300px;
     background-color: white;
     margin: 2%;
+    @include desktop {
+        width: 260px;
+        height: 260px;
+    }
 }
 
 #project1 {

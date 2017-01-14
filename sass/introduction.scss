@@ -5,11 +5,15 @@
     flex-basis: 40%;
     text-transform: capitalize;
     color: white;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include tablet {
+        justify-content: space-around;
+    }
 }
 .my-photo {
-    width: 30%;
-    height: 100%;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     background-image: url("../../assets/images/profilepic.jpg");
     background-repeat: no-repeat;
