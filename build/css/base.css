@@ -2,11 +2,17 @@
 Screen Sizes
 ******************************/
 header {
-  height: 100vh;
+  height: 395px;
   background: linear-gradient(rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url("../../assets/images/background2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+  @media (min-width: 600px) {
+    header {
+      height: 550px; } }
+  @media (min-width: 1240px) {
+    header {
+      height: 100vh; } }
 
 .navigation {
   padding: 20px;
@@ -82,7 +88,7 @@ h1 {
 .project {
   width: 320px;
   height: 300px;
-  background-color: white;
+  background-color: dimgrey;
   margin: 2%; }
   @media (min-width: 1240px) {
     .project {

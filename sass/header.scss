@@ -1,9 +1,15 @@
 header {
-    height: 100vh;
+    height: 395px;
     background: linear-gradient(rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url("../../assets/images/background2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @include tablet{ 
+        height: 550px;
+    }
+    @include desktop {
+        height: 100vh;
+    }
 }
 .navigation {
     padding: 20px;
