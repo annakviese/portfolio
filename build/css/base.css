@@ -1,14 +1,37 @@
 /******************************
 Screen Sizes
 ******************************/
-.navigation ul {
-  text-align: right; }
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url("../../assets/images/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
-.navigation li {
-  display: inline;
-  color: white;
-  font-size: 16px;
-  margin-right: 5%; }
+.navigation {
+  padding: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .navigation ul {
+    text-align: right; }
+  .navigation li {
+    display: inline;
+    color: white;
+    font-size: 16px;
+    margin-right: 5%;
+    text-transform: uppercase; }
+
+.my-intro {
+  margin-top: 30%;
+  text-align: center;
+  color: white; }
+  @media (min-width: 600px) {
+    .my-intro {
+      margin-top: 15%; } }
+  .my-intro h1, .my-intro h2 {
+    text-transform: capitalize; }
 
 .intro-section {
   height: 80vh;
@@ -77,5 +100,10 @@ h1 {
   outline: none; }
 
 body {
-  background-color: black;
-  color: white; }
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0; }

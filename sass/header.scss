@@ -1,4 +1,14 @@
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url("../../assets/images/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .navigation {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
     ul {
         text-align: right;
     } 
@@ -7,5 +17,18 @@
         color: white;
         font-size: 16px;
         margin-right: 5%;
+        text-transform: uppercase;
+    }
+}
+
+.my-intro {
+    margin-top: 30%;
+    text-align: center;
+    color: white;
+    @include tablet {
+        margin-top: 15%;
+    }
+    h1, h2{
+        text-transform: capitalize;
     }
 }
