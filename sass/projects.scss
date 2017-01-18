@@ -28,7 +28,7 @@ h1 {
 }
 
 #project1 {
-    background-image: url("../../assets/images/aloha.png");
+    background-image: url("../../assets/images/inhabitent.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,13 +39,13 @@ h1 {
     background-size: cover;
 }
 #project3 {
-    background-image: url("../../assets/images/inhabitent.png");
-    background-position: center;
+    background-image: $linear-gradient, url("../../assets/images/aloha.png");
+    background-position-x: 30%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #project4 {
-    background-image: url("../../assets/images/best2.png");
+    background-image: $linear-gradient, url("../../assets/images/best.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
