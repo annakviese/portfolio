@@ -1,7 +1,7 @@
 @import 'mixins';
 @import 'variables';
 
-
+@import 'fonts';
 @import 'header';
 @import 'introduction';
 @import 'projects';
@@ -15,9 +15,8 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    font-family: $main-font;
+    font-weight: normal;
+    font-size: 16px;
 }
 
-h1,h2,h3,h4,h5,h6,p, ul {
-    margin: 0;
-    padding: 0;
-}

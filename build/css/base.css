@@ -1,6 +1,26 @@
 /******************************
 Screen Sizes
 ******************************/
+/******************************
+Typography
+******************************/
+/******************************
+Colours
+******************************/
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular-webfont.eot");
+  src: url("../fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Bold-webfont.eot");
+  src: url("../fonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold-webfont.woff") format("woff"), url("../fonts/Roboto-Bold-webfont.ttf") format("truetype"), url("../fonts/Roboto-Bold-webfont.svg#robotobold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 header {
   height: 395px;
   background: linear-gradient(rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%), url("../../assets/images/background2.jpg");
@@ -21,23 +41,31 @@ header {
   -ms-flex-pack: center;
       justify-content: center; }
   .navigation ul {
-    text-align: right; }
+    text-align: right;
+    margin: 0; }
   .navigation li {
     display: inline;
     color: white;
     font-size: 16px;
     margin-right: 5%;
     text-transform: uppercase; }
+    .navigation li:hover {
+      color: #d8c68f; }
 
 .my-intro {
-  margin-top: 30%;
+  margin-top: 5em;
   text-align: center;
   color: white; }
   @media (min-width: 600px) {
     .my-intro {
       margin-top: 15%; } }
   .my-intro h1, .my-intro h2 {
-    text-transform: capitalize; }
+    color: #efefef;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase; }
+  .my-intro h1 {
+    padding-bottom: 2em; }
 
 .intro-section {
   height: 80vh;
@@ -76,11 +104,13 @@ header {
       justify-content: center; }
   @media (min-width: 600px) {
     .projects {
-      -ms-flex-pack: justify;
-          justify-content: space-between; } }
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
 
 h1 {
+  padding-top: 2em;
   text-align: center;
+  color: #1e1e1d;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   text-transform: uppercase; }
@@ -101,6 +131,22 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover; }
 
+#project2 {
+  background-image: url("../../assets/images/instanews.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#project3 {
+  background-image: url("../../assets/images/inhabitent.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#project4 {
+  background-image: url("../../assets/images/best2.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 * {
   box-sizing: border-box;
   outline: none; }
@@ -108,8 +154,7 @@ h1 {
 body {
   margin: 0;
   padding: 0;
-  width: 100%; }
-
-h1, h2, h3, h4, h5, h6, p, ul {
-  margin: 0;
-  padding: 0; }
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 16px; }

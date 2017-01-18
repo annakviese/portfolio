@@ -6,11 +6,13 @@
     flex-wrap: wrap;
     justify-content: center;
     @include tablet {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
 h1 {
+    padding-top: 2em;
     text-align: center;
+    color: $dark-text;
     flex-basis: 100%;
     text-transform: uppercase;
 }
@@ -28,6 +30,22 @@ h1 {
 #project1 {
     background-image: url("../../assets/images/aloha.png");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#project2 {
+    background-image: url("../../assets/images/instanews.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#project3 {
+    background-image: url("../../assets/images/inhabitent.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#project4 {
+    background-image: url("../../assets/images/best2.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
