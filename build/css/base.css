@@ -9,15 +9,15 @@ Colours
 ******************************/
 @font-face {
   font-family: 'Roboto';
-  src: url("../fonts/Roboto-Regular-webfont.eot");
-  src: url("../fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  src: url("../../assets/fonts/Roboto-Regular-webfont.eot");
+  src: url("../../assets/fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Roboto-Regular-webfont.woff") format("woff"), url("../../assets/fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../../assets/fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Roboto';
-  src: url("../fonts/Roboto-Bold-webfont.eot");
-  src: url("../fonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold-webfont.woff") format("woff"), url("../fonts/Roboto-Bold-webfont.ttf") format("truetype"), url("../fonts/Roboto-Bold-webfont.svg#robotobold") format("svg");
+  src: url("../../assets/fonts/Roboto-Bold-webfont.eot");
+  src: url("../../assets/fonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Roboto-Bold-webfont.woff") format("woff"), url("../../assets/fonts/Roboto-Bold-webfont.ttf") format("truetype"), url("../../assets/fonts/Roboto-Bold-webfont.svg#robotobold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
@@ -67,33 +67,8 @@ header {
   .my-intro h1 {
     padding-bottom: 2em; }
 
-.intro-section {
-  height: 80vh;
-  width: 100vw;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
-  text-transform: capitalize;
-  color: white;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  @media (min-width: 600px) {
-    .intro-section {
-      -ms-flex-pack: distribute;
-          justify-content: space-around; } }
-
-.my-photo {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  background-image: url("../../assets/images/profilepic.jpg");
-  background-repeat: no-repeat; }
-
 .projects {
-  height: 80vh;
+  height: 100;
   width: 90%;
   margin: 0 auto;
   display: -ms-flexbox;
@@ -146,6 +121,13 @@ h1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../../assets/images/best.png");
   background-repeat: no-repeat;
   background-size: cover; }
+
+.my-photo {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-image: url("../../assets/images/myprofile.png");
+  background-repeat: no-repeat; }
 
 * {
   box-sizing: border-box;
