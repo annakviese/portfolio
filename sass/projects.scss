@@ -2,9 +2,9 @@
     height: 100;
     width: 90%;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
     @include tablet {
         justify-content: space-around;
     }
@@ -19,7 +19,7 @@ h1 {
 .project {
     width: 320px;
     height: 300px;
-    background-color: dimgrey;
+    background-color: black;
     margin: 2%;
     @include desktop {
         width: 260px;
@@ -48,4 +48,16 @@ h1 {
     background-image: $linear-gradient, url("../../assets/images/best.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+#project5 {
+    background-image: $linear-gradient, url("../../assets/images/mars_app.png");
+    background-size: contain;
+    background-position-x: 50%;
+    background-color: black;
+}
+#project6 {
+    background-image: $linear-gradient, url("../../assets/images/pong-game.png");
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    background-position: 30% 50%;
 }

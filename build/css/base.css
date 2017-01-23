@@ -70,13 +70,7 @@ header {
 .projects {
   height: 100;
   width: 90%;
-  margin: 0 auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: center;
-      justify-content: center; }
+  margin: 0 auto; }
   @media (min-width: 600px) {
     .projects {
       -ms-flex-pack: distribute;
@@ -93,7 +87,7 @@ h1 {
 .project {
   width: 320px;
   height: 300px;
-  background-color: dimgrey;
+  background-color: black;
   margin: 2%; }
   @media (min-width: 1240px) {
     .project {
@@ -121,6 +115,18 @@ h1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../../assets/images/best.png");
   background-repeat: no-repeat;
   background-size: cover; }
+
+#project5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../../assets/images/mars_app.png");
+  background-size: contain;
+  background-position-x: 50%;
+  background-color: black; }
+
+#project6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../../assets/images/pong-game.png");
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  background-position: 30% 50%; }
 
 .my-photo {
   width: 350px;
