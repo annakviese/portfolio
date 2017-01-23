@@ -128,12 +128,22 @@ h1 {
   background-size: 100% 80%;
   background-position: 30% 50%; }
 
+.about-me {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.my-story {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+
 .my-photo {
   width: 350px;
   height: 350px;
-  border-radius: 50%;
   background-image: url("../../assets/images/myprofile.png");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: 150%; }
 
 * {
   box-sizing: border-box;

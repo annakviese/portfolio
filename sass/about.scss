@@ -1,8 +1,14 @@
-
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+}
+.my-story {
+    flex-basis: 50%;
+}
 .my-photo {
     width: 350px;
     height: 350px;
-    border-radius: 50%;
     background-image: url("../../assets/images/myprofile.png");
     background-repeat: no-repeat;
+    background-size: 150%;
 }
