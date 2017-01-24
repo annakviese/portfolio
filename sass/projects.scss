@@ -1,12 +1,12 @@
 .projects {
-    height: 100vh;
+    height: 70vh;
     width: 90%;
     margin: 0 auto;
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
     @include tablet {
         justify-content: space-around;
+    }
+    @include desktop {
+        height: 100vh;
     }
 }
 h1 {
